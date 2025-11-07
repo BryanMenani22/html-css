@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            text-align: center;
+            position: relative;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: aquamarine;
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+        p {
+            font-size: 5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">46 081 801</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">21 393 441</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17 223 547</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 870 907</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">11 890 517</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">11 233 263</td>
+                </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td><strong>111.460.213</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima neque repellendus ad illo, fugiat dolor enim repudiandae tenetur explicabo corrupti saepe repellat maiores culpa minus odit, doloremque dicta. Iste, at! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint beatae deserunt itaque est, id exercitationem velit nobis corporis laboriosam delectus assumenda perferendis, dignissimos, similique commodi quia magni! Soluta, vitae inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint id non eaque iste odio deserunt suscipit necessitatibus aliquid animi, ipsam, magni qui rerum sapiente natus inventore! Dolores modi cupiditate aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ea iusto aliquam distinctio neque, quasi alias esse doloremque maxime consectetur repudiandae odio, vero ipsam natus id tempore! Ut, deleniti commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod asperiores quam officiis itaque quas. Qui doloremque illum tempora assumenda molestias ipsam quaerat? Quidem cupiditate est, quasi praesentium nostrum beatae sit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda aperiam, neque dolore delectus, modi labore aut voluptatum est soluta inventore quam, consectetur maiores minima. Suscipit aliquid eveniet omnis a? Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, voluptates ea, harum laboriosam dicta accusantium mollitia delectus suscipit amet voluptatum dolorem a et quas consequatur in, neque ratione non? Perferendis! </p>
+</body>
+</html>
